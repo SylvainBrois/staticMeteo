@@ -1,17 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr-FR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <script src="index.js"></script>
+  <meta charset="UTF-8">
+  <title>Météo</title>
+
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+<div class="research">
+  <div class="ville">
+    Recherche par ville :
+    <input type="text" id="Ville" placeholder="Ville">
+    <button id="submitBtnCity">Rechercher</button>
+  </div>
+  <div class="coords">
+    Recherche par coordonnées :
+    <input type="text" id="lat" placeholder="Latitude">
+    <input type="text" id="lon" placeholder="Longitude">
+    <button id="submitBtnCoord">Rechercher</button>
+  </div>
+</div>
 
+<div id="infosVille">
+  <h1 id="nomVille"></h1>
+  <h1 id="pays"></h1>
+  <div class="coord">
+    <h3 id="coordH" style="display: none">Coordonnées : </h3>
+    <div class="values">
+      <p id="latitude"></p>
+      <p id="longitude"></p>
+    </div>
+  </div>
+</div>
+<div id="metriques" class="temperatures" style="display: none">
+  <h3>Métriques : </h3>
+  <p id="meteo"></p>
+  <p id="courante"></p>
+  <p id="ressentie"></p>
+  <p id="maximale"></p>
+  <p id="minimale"></p>
+  <p id="humidite"></p>
+</div>
+</body>
 </html>

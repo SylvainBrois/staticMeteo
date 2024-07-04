@@ -19,3 +19,21 @@ main > h1 {
   text-align: center;
   font-size: 3.5em;
 }
+
+.research {
+  display: inline-flex;
+}
+.research .coords {
+  padding-left: 10px;
+}
+
+.coord {
+  line-height: 1.2px;
+}
+.values{
+  display: inline-flex;
+}
+.values #longitude {
+  padding-left: 10px;
+}
+
