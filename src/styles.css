@@ -21,6 +21,7 @@ main > h1 {
 }
 
 .research {
+  padding-top: 10px;
   display: inline-flex;
 }
 .research .coords {
