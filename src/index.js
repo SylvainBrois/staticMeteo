@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(error => {
                 console.error('Error fetching weather data:', error);
             });
-        console.log("data après le fetch ", data);
-        console.log(data.name);
         loadInfos(data)
     });
 
@@ -30,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.json())
             .then(r => {
                 data = r;
-                console.log("data dans le fetch ", data);
             })
             .catch(error => {
                 console.error('Error fetching weather data:', error);
